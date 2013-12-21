@@ -13,18 +13,16 @@ service.
 
 ### Install
 
-   npm install git://github.com/d1b1/node-mocha-shell#master
+    npm install git://github.com/d1b1/node-mocha-shell#master --save-dev
 
 ### Argument
 The following are cli options for defining the test and app
 server scripts that shell will use to test with.
 
---test (Optional) Testscript name. If not defined, the shell will attempt
+1. --test (Optional) Testscript name. If not defined, the shell will attempt
 to find and use all the .js files in the test folder.
-
---test-dir (Optional) Directory for test files.
-
---app (Optional) Script path for the bootstrap express.js app. Assumes
+2. --test-dir (Optional) Directory for test files.
+3. --app (Optional) Script path for the bootstrap express.js app. Assumes
 the app.js will be found in test/lib/app.js.
 
 Coming soon - .mocha-shell will contain all the mocha and app
@@ -33,7 +31,7 @@ call.
 
 ### Usage
 
-    // From a CLI
+    // From a CLI using defaults
     mocha-shell 
 
     // Using Istanbul
