@@ -25,7 +25,7 @@ to find and use all the .js files in the test folder.
 * `--app` (Optional) Script path for the bootstrap express.js app. Assumes
 the app.js will be found in test/lib/app.js.
 
-## Usage
+#### Usage
 
 CLI using defaults. Will look for and run all test files in the 
 default ./test folder. It wil look for a ./test/app folder.
