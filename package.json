@@ -1,0 +1,30 @@
+{
+  "name": "mocha-shell",
+  "version": "0.0.1",
+  "description": "Node script to enable Mocha to run Express.js apps and Mocha in the same process.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "mocha-shell": "./index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/d1b1/node-mocha-shell.git"
+  },
+  "keywords": [
+    "mocha",
+    "express",
+    "tests"
+  ],
+  "author": "Stephan Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/d1b1/node-mocha-shell/issues"
+  },
+  "homepage": "https://github.com/d1b1/node-mocha-shell",
+  "dependencies": {
+    "mocha": "~1.16.1"
+  }
+}
