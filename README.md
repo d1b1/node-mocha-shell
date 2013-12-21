@@ -11,11 +11,11 @@ This code was written to help swagger.js API test and deploy using
 codeship.io, as well as utilitize the coveralls.io code coverage 
 service. 
 
-### Install
+## Install
 
     npm install git://github.com/d1b1/node-mocha-shell#master --save-dev
 
-### Options
+## Options
 The following are cli options for defining the test and app
 server scripts that shell will use to test with.
 
@@ -25,7 +25,7 @@ to find and use all the .js files in the test folder.
 * `--app` (Optional) Script path for the bootstrap express.js app. Assumes
 the app.js will be found in test/lib/app.js.
 
-### Usage
+## Usage
 
 CLI using defaults. Will look for and run all test files in the 
 default ./test folder. It wil look for a ./test/app folder.
@@ -53,16 +53,16 @@ Example of calling the command with the `--test` and the `--test-dir` file.
 
     mocha-shell --test myscript.js --test-dir ./test 
 
-### NPM
+## NPM
 
     "test": "mocha-shell --test-dir ./test --app ./test/lib/bootstrap.js"
 
-### Example
+## Example
 Included is an example. [Example](https://github.com/d1b1/node-mocha-shell/tree/master/example)
 This example used the [node-express-mongoose-demo](https://github.com/madhums/node-express-mongoose-demo)
 sample app and pattern.
 
-### Coming Soon
+## Coming Soon
 Working on a better way to setup shell defaults to keep configuration easier
 for CI setups. `.mocha-shell.json` will contain all the mocha and app
 test information to change the default to the `mocha-shell` script
