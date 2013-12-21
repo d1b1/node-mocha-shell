@@ -1,4 +1,4 @@
-node-mocha-shell
+Mocha Shell
 ================
 
 Simple shell to run node.js Apps and Mocha tests from the CLI.
@@ -53,6 +53,11 @@ Example of calling the command with the `--test` and the
 `--test-dir` file. 
 
     mocha-shell --test myscript.js --test-dir ./test 
+
+### Example
+Included is an example. (Example)[https://github.com/d1b1/node-mocha-shell/blob/master/example] 
+This example used the (node-express-mongoose-demo)[https://github.com/madhums/node-express-mongoose-demo] 
+sample app and pattern.
 
 ### Coming Soon
 `.mocha-shell.json` will contain all the mocha and app

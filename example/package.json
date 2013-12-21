@@ -1,0 +1,9 @@
+{
+  "name": "example",
+  "version": "0.0.1",
+  "description": "Example Expressjs, Mocha test and bootstrapped app.",
+  "dependencies": {
+    "mocha": "~1.16.1",
+    "braque": "~0.0.4"
+  }
+}
