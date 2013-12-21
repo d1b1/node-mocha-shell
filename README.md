@@ -55,7 +55,7 @@ Example of calling the command with the `--test` and the
     mocha-shell --test myscript.js --test-dir ./test 
 
 ### Example
-Included is an example. (Example)[https://github.com/d1b1/node-mocha-shell/blob/master/example] 
+Included is an example. [Example](https://github.com/d1b1/node-mocha-shell/tree/master/example)
 This example used the [node-express-mongoose-demo](https://github.com/madhums/node-express-mongoose-demo)
 sample app and pattern.
 
