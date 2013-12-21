@@ -1,7 +1,7 @@
-Mocha Shell
+Mocha Shell 
 ================
 
-Simple shell to run node.js Apps and Mocha tests from the CLI.
+(Beta) Simple shell to run node.js Apps and Mocha tests from the CLI.
 
 This is a node module that provides a wrapper for a script that runs
 mocha programmatically, and will start an Express App. This process is
@@ -71,17 +71,17 @@ for CI setups. `.mocha-shell.json` will contain all the mocha and app
 test information to change the default to the `mocha-shell` script
 call.
 
-    { 
-      "app_dir": "./test/lib",
-      "test_dir": "./test"
-      "mocha": { 
-         "timeout": 500,
-         "reporter": "spec"
-      },
-      "env": {
-      	"key": "value"
-      }
-    }
+    module.exports = {
+        "app_dir": "./test/lib",
+        "test_dir": "./test"
+        "mocha": { 
+           "timeout": 500,
+           "reporter": "spec"
+        },
+        "env": {
+        	"key": "value"
+        }
+    } 
 
 #### License (The MIT License)
 
