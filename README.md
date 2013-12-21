@@ -15,14 +15,14 @@ service.
 
     npm install git://github.com/d1b1/node-mocha-shell#master --save-dev
 
-### Argument
+### Options
 The following are cli options for defining the test and app
 server scripts that shell will use to test with.
 
-1. --test (Optional) Testscript name. If not defined, the shell will attempt
+* `--test` (Optional) Testscript name. If not defined, the shell will attempt
 to find and use all the .js files in the test folder.
-1. --test-dir (Optional) Directory for test files.
-1. --app (Optional) Script path for the bootstrap express.js app. Assumes
+* `--test-dir` (Optional) Directory for test files.
+* `--app` (Optional) Script path for the bootstrap express.js app. Assumes
 the app.js will be found in test/lib/app.js.
 
 ### Usage
@@ -49,10 +49,13 @@ run the tests within the same space of the Express.js app.
     // Hint: Sending istanbul .coverage data to Coveralls.io
     cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 
-Example of calling the command with the `--test` and the 
-`--test-dir` file. 
+Example of calling the command with the `--test` and the `--test-dir` file. 
 
     mocha-shell --test myscript.js --test-dir ./test 
+
+### NPM
+
+    "test": "mocha-shell --test-dir ./test --app ./test/lib/bootstrap.js"
 
 ### Example
 Included is an example. [Example](https://github.com/d1b1/node-mocha-shell/tree/master/example)
@@ -60,7 +63,8 @@ This example used the [node-express-mongoose-demo](https://github.com/madhums/no
 sample app and pattern.
 
 ### Coming Soon
-`.mocha-shell.json` will contain all the mocha and app
+Working on a better way to setup shell defaults to keep configuration easier
+for CI setups. `.mocha-shell.json` will contain all the mocha and app
 test information to change the default to the `mocha-shell` script
 call.
 
