@@ -56,7 +56,7 @@ Example of calling the command with the `--test` and the
 
 ### Example
 Included is an example. (Example)[https://github.com/d1b1/node-mocha-shell/blob/master/example] 
-This example used the (node-express-mongoose-demo)[https://github.com/madhums/node-express-mongoose-demo] 
+This example used the [node-express-mongoose-demo](https://github.com/madhums/node-express-mongoose-demo)
 sample app and pattern.
 
 ### Coming Soon
